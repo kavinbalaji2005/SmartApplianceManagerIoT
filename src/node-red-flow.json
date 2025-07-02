@@ -1,0 +1,567 @@
+[
+    {
+        "id": "26abc23c036c230c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2ee5b9311b8de217",
+        "type": "ui_group",
+        "name": "Smart Appliance Manager Dashboard",
+        "tab": "283d138502951f2a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "283d138502951f2a",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0392e5437b2f2637",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1b1c66cfbc82f3ba",
+        "type": "mqtt-broker",
+        "name": " Public HiveMQ MQTT broker",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "pi-Wokwi",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ae18f5aed34e7812",
+        "type": "blynk-iot-client",
+        "name": "Blynk IoT",
+        "path": "blynk.cloud",
+        "key": "q6GT_CTU7k9HR9M9eppu8TxMkQPcM6H5",
+        "tmpl": "TMPL34w8UGHS7",
+        "dbg_all": false,
+        "dbg_log": false,
+        "dbg_prop": false,
+        "dbg_sync": false,
+        "dbg_low": false,
+        "dbg_pins": "",
+        "multi_cmd": false,
+        "enabled": true
+    },
+    {
+        "id": "6e78f4c0c436d1f9",
+        "type": "ui_gauge",
+        "z": "26abc23c036c230c",
+        "name": "",
+        "group": "2ee5b9311b8de217",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Temperature ",
+        "label": "",
+        "format": "{{value}} °C",
+        "min": "0",
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 550,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "09a0fead1a8dfe93",
+        "type": "ui_chart",
+        "z": "26abc23c036c230c",
+        "name": "",
+        "group": "2ee5b9311b8de217",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Temp Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "60",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 550,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27082085150e164e",
+        "type": "mqtt in",
+        "z": "26abc23c036c230c",
+        "name": "",
+        "topic": "TempData",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "1b1c66cfbc82f3ba",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 300,
+        "wires": [
+            [
+                "6e78f4c0c436d1f9",
+                "7c4c2a45e324f3a2",
+                "09a0fead1a8dfe93",
+                "57ae693f3731dd1a"
+            ]
+        ]
+    },
+    {
+        "id": "194977839a0cd852",
+        "type": "ui_text",
+        "z": "26abc23c036c230c",
+        "group": "2ee5b9311b8de217",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Fan Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#04ff00",
+        "x": 550,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "73dd4955fa466db9",
+        "type": "ui_text",
+        "z": "26abc23c036c230c",
+        "group": "2ee5b9311b8de217",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "AC Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 540,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "7c4c2a45e324f3a2",
+        "type": "debug",
+        "z": "26abc23c036c230c",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "188a1ef4cfa28ccc",
+        "type": "mqtt in",
+        "z": "26abc23c036c230c",
+        "name": "",
+        "topic": "FAN",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "1b1c66cfbc82f3ba",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 520,
+        "wires": [
+            [
+                "83eeb4f1c1824802",
+                "194977839a0cd852",
+                "03237525128e03bd"
+            ]
+        ]
+    },
+    {
+        "id": "4ed2eb7d15977d44",
+        "type": "mqtt in",
+        "z": "26abc23c036c230c",
+        "name": "",
+        "topic": "AC",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "1b1c66cfbc82f3ba",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 700,
+        "wires": [
+            [
+                "ceb4a091fba00597",
+                "73dd4955fa466db9",
+                "f1c82eb0fed2d9ad"
+            ]
+        ]
+    },
+    {
+        "id": "83eeb4f1c1824802",
+        "type": "debug",
+        "z": "26abc23c036c230c",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "ceb4a091fba00597",
+        "type": "debug",
+        "z": "26abc23c036c230c",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "40bef2f37cb3bcd7",
+        "type": "ui_gauge",
+        "z": "26abc23c036c230c",
+        "name": "",
+        "group": "2ee5b9311b8de217",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "LED Brightness",
+        "label": "",
+        "format": "{{value}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#00b500",
+            "#00b500"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 560,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "37c1da3bb1192d42",
+        "type": "mqtt in",
+        "z": "26abc23c036c230c",
+        "name": "",
+        "topic": "Brightness",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "1b1c66cfbc82f3ba",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 960,
+        "wires": [
+            [
+                "40bef2f37cb3bcd7",
+                "e2955feebb26734d",
+                "8e104cfaf2486a81",
+                "bc85f6963de42cc2"
+            ]
+        ]
+    },
+    {
+        "id": "e2955feebb26734d",
+        "type": "debug",
+        "z": "26abc23c036c230c",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "8e104cfaf2486a81",
+        "type": "ui_chart",
+        "z": "26abc23c036c230c",
+        "name": "",
+        "group": "2ee5b9311b8de217",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Brightness Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 570,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57ae693f3731dd1a",
+        "type": "blynk-iot-out-write",
+        "z": "26abc23c036c230c",
+        "name": "Blynk_Temperature",
+        "pin": "0",
+        "pinmode": 0,
+        "client": "ae18f5aed34e7812",
+        "x": 570,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "bc85f6963de42cc2",
+        "type": "blynk-iot-out-write",
+        "z": "26abc23c036c230c",
+        "name": "Blynk_LED",
+        "pin": "1",
+        "pinmode": 0,
+        "client": "ae18f5aed34e7812",
+        "x": 550,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "f1c82eb0fed2d9ad",
+        "type": "blynk-iot-out-write",
+        "z": "26abc23c036c230c",
+        "name": "Blynk_AC",
+        "pin": "3",
+        "pinmode": 0,
+        "client": "ae18f5aed34e7812",
+        "x": 540,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "03237525128e03bd",
+        "type": "blynk-iot-out-write",
+        "z": "26abc23c036c230c",
+        "name": "Blynk_FAN",
+        "pin": "2",
+        "pinmode": 0,
+        "client": "ae18f5aed34e7812",
+        "x": 550,
+        "y": 580,
+        "wires": []
+    }
+]
