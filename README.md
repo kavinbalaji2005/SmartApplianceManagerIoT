@@ -69,7 +69,7 @@ git clone https://github.com/yourusername/your-repo-name.git
 
 ## Node-RED Flow Example
 
-See [`src/main.ino`](src/main.ino).
+See [`src/node-red-flow.json`](src/node-red-flow.json).
 
 
 ## Author
